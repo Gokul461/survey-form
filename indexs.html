@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+</head>
+<body>
+  <link rel="stylesheet" href="styles.css">
+  <main>
+    <div class="content">
+      <header class="header">
+    <h1 id="title" class="text-center">IBM Course Survey Form</h1>
+    <p id="description" class="desc-center">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form">
+      <div class="group">
+      <label id="name-label" for="name">Name</label>
+        <input placeholder= "Enter your name" id ="name" type="text" name="name" class = "form-control" required>
+      <label id="email-label" for="email">Email</label>
+      <input placeholder= "Enter your Email" id="email" type="email" name="email" class="form-control" required>
+      <label id="number-label" for="number">Age(optional)</label>
+      <input id="number" placeholder= "Enter your age" pattern ="{0-9}" class="form-control" type="number" name="number" max="99" min="10">
+      </div>
+      <div class="group">
+        <p>Which option best describes your current role?</p>
+      <select id="dropdown" class="form-control" required>
+        <option value="Student">student</option>
+        <option value="professional developer">profesional developer</option>
+        <option value="educator">educator</option>
+        <option value="other">other</option>
+</select>
+</div>
+<div class="group">
+<p>Would you recommend IBM course for your friend?</p>
+<label>
+<input type="radio" checked name="rec" value="Definitely " class="input-radio"> Definitely
+</label>
+<label>
+<input type="radio" name="rec" value="May be  " class="input-radio">May be
+</label>
+<label>
+<input type="radio" class="input-radio" name="rec" value="Not sure ">Not sure
+</label>
+</div>
+<div class="group">
+<p>What would you like to see improved?
+  <span class="clue"> (Check all that apply)</span><p>
+    <label>
+<input name="prefer" type="checkbox" value="Full stack development projects" class="input-checkbox">Full stack development projects
+</label>
+<label>
+<input class="input-checkbox" name="prefer" type="checkbox" value="Data analyst projects">Data analyst projects
+</label>
+<label>
+<input class="input-checkbox" name="prefer" type="checkbox" value="Data Science">Data Science
+</label>
+<label>
+<input class="input-checkbox" name="prefer" type="checkbox" value="AI Developer projects">AI Developer projects
+</label>
+<label>
+<input class="input-checkbox" name="prefer" type="checkbox" value = "Python for data science & AI concepts">Python for data science & AI concepts
+</label>
+</div>
+<div class="group">
+  <p>Any comments or suggestions? </p>
+<textarea id="comments" name="comments" class="input-textarea" placeholder="Enter your comments...">
+  </textarea>
+  </div>
+  <div class="group">
+  <button id="submit" type="submit" class="submit-button">
+    Submit</button>
+</div>
+    </form>
+    </div>
+  </main>
+</body>
+</html>
